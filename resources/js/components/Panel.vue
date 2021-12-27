@@ -4,7 +4,7 @@
             <heading :level="1" class="mb-3">{{ panel.name }}</heading>
         </slot>
 
-        <card class="mb-6 py-3 px-6" :class="{
+        <card class="mb-6 py-3 px-6 nova-grid-card-styles" :class="{
             'flex' : fields.some((field) => field.gridder),
             'flex-wrap' : fields.some((field) => field.gridder)
         }">
@@ -83,3 +83,28 @@
         },
     }
 </script>
+
+<style lang="scss">
+
+.nova-grid-card-styles {
+  display: flex; //ADDED
+  flex-wrap: wrap; //ADDED
+  width: 270%; //ADDED
+
+  > form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .bg-30.flex.px-8.py-4 {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+  }
+
+}
+
+
+</style>
