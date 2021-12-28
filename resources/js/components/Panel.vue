@@ -90,20 +90,6 @@
   display: flex; //ADDED
   flex-wrap: wrap; //ADDED
   width: 270%; //ADDED
-
-  > form {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-    .bg-30.flex.px-8.py-4 {
-      width: 100%;
-      display: flex;
-      justify-content: flex-end;
-    }
-
-  }
-
 }
 
 
